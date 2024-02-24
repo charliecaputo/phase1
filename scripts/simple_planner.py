@@ -30,7 +30,6 @@ if __name__ == '__main__':
 	plan.points.append(plan_point1)
 	
 	plan_point2 = Twist()
-	# just a quick solution to send two target points
 	# define a point close to the initial position
 	plan_point2.linear.x = -0.4
 	plan_point2.linear.y = -0.23
@@ -62,13 +61,6 @@ if __name__ == '__main__':
 	plan_point4.angular.z = 1.57
 	# add this point to the plan
 	plan.points.append(plan_point4)
-	
-	
-	
-	
-	
-
-	
 	
 	while not rospy.is_shutdown():
 		# publish the plan
